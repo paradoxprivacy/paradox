@@ -77,7 +77,7 @@
 
     <!------------------------------- T MARKER ------------------------------->
    
-    <script>
+    <!-- <script>
         AFRAME.registerComponent('video-privacy', {
           init: function() {
       console.log('video init entered');
@@ -97,11 +97,10 @@
               }
           }
       });
-    </script>
+    </script> -->
 
-   
     <a-marker preset="custom" type="pattern" url="patt/newT.patt" video-privacy>
-      <a-asset-item id="chevronLeft" src="3DModels/chevron.gltf" onclick="javascript:Test('Test');"></a-asset-item>
+      <a-asset-item id="chevronLeft" src="3DModels/chevron.gltf"></a-asset-item>
       <a-entity position="0 0 0" rotation="0 90 0" scale="0.5 0.5 0.5" gltf-model="#chevronLeft">
        
         <a-animation attribute="position"
@@ -115,12 +114,12 @@
       </a-animation>
       </a-entity>
       
-      <a-entity>
+      <!-- <a-entity>
       <a-plane scale = "4 2" position='0 0.1 0' rotation="-90 0 0" material='transparent:true;src:#mp4' controls></a-plane>
         <video preload="none" id="mp4" response-type="arraybuffer" loop="false" crossorigin webkit-playsinline playsinline controls>
           <source  src="videos/whyshouldpeople.mp4">
         </video>
-      </a-entity>
+      </a-entity> -->
       
     </a-marker>
 
@@ -204,7 +203,7 @@
 
     </a-marker> -->
 
-    <script>                    
+    <!-- <script>                    
       AFRAME.registerComponent('video-danceass', {
           init: function() {
       console.log('video init entered');
@@ -225,12 +224,12 @@
           }
       });
     </script>
-
+ -->
     <a-marker preset="custom" type="pattern" url="patt/B.patt" video-danceass>
-      <a-plane scale = "4 2" position='0 0.1 0' rotation="-90 0 0" material='transparent:true;src:#mp4' controls></a-plane>
+      <!-- <a-plane scale = "4 2" position='0 0.1 0' rotation="-90 0 0" material='transparent:true;src:#mp4' controls></a-plane>
       <video preload="none" id="mp4" response-type="arraybuffer" loop="true" crossorigin webkit-playsinline playsinline controls>
         <source  src="videos/whyshouldpeople.mp4">
-      </video>
+      </video> -->
 
       <a-asset-item id="chevronRight" src="3DModels/chevron.gltf"></a-asset-item>
       <a-entity position="0 0 0" rotation="180 90 0" scale="0.5 0.5 0.5" gltf-model="#chevronRight">
