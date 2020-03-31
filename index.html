@@ -158,7 +158,7 @@
      
   
     <!------------------------------<<<  MP4 VIDEO & SCRIPT >>>------------------------------->
-    <script>                    
+    <!-- <script>                    
       AFRAME.registerComponent('video-vidhandler', {
           init: function() {
       console.log('video init entered');
@@ -178,22 +178,22 @@
               }
           }
       });
-    </script>
+    </script> -->
   
 
     <a-marker preset="custom" type="pattern" url="patt/hiro.patt" video-vidhandler>
       
-        <a-plane scale = "4 2" position='0 0.1 0' rotation="-90 0 0" material='transparent:true;src:#mp4' controls></a-plane>
+        <!-- <a-plane scale = "4 2" position='0 0.1 0' rotation="-90 0 0" material='transparent:true;src:#mp4' controls></a-plane>
         <video preload="none" id="mp4" response-type="arraybuffer" loop="false" crossorigin webkit-playsinline playsinline controls>
           <source  src="videos/DanceAssassin.mp4">
-        </video>
+        </video> -->
        
-        <a-asset-item id="chevronRight" src="3DModels/chevron.gltf"></a-asset-item>
-        <a-entity position="0 0 0" rotation="180 90 0" scale="0.5 0.5 0.5" gltf-model="#chevronRight">
+        <a-asset-item id="chevronDown" src="3DModels/chevron.gltf"></a-asset-item>
+        <a-entity position="0 0 0" rotation="180 0 0" scale="0.5 0.5 0.5" gltf-model="#chevronDown">
           <a-animation attribute="position"
             delay="0000"
             dur="1000"
-            from="6.4 2 2"
+            from="0 2 0"
             to= "0 2 2"
             direction="alternate"
             repeat="indefinite"
