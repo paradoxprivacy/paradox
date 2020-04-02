@@ -102,7 +102,6 @@
     <a-marker preset="custom" type="pattern" url="patt/newT.patt" video-privacy>
       <a-asset-item id="chevronLeft" src="3DModels/chevron.gltf"></a-asset-item>
       <a-entity position="0 0 0" rotation="0 90 0" scale="0.5 0.5 0.5" gltf-model="#chevronLeft">
-       
         <a-animation attribute="position"
         delay="0000"
         dur="1000"
@@ -113,6 +112,7 @@
         easing="ease">
       </a-animation>
       </a-entity>
+    </a-marker>
       
       <!-- <a-entity>
       <a-plane scale = "4 2" position='0 0.1 0' rotation="-90 0 0" material='transparent:true;src:#mp4' controls></a-plane>
@@ -258,11 +258,12 @@
       </a-entity> -->
 
     <!-- <a-marker preset="custom" type="pattern" url="patt/hiro.patt"> -->
-    <a-asset-item id="Scamera" src="Scamera/scene.gltf"></a-asset-item>
+    <!-- <a-asset-item id="Scamera" src="Scamera/scene.gltf"></a-asset-item> -->
+    <a-asset-item id="Scamera" src="accessCamera/scene.gltf"></a-asset-item>
     <a-entity gltf-model="#Scamera" animation-mixer="loop:repeat" 
-      scale="0.4 0.4 0.4" 
-      position="-0.2 -0 -0.7" 
-      rotation="-34 -90 90"></a-entity>
+      scale="70 70 70" 
+      position="0 0 1 " 
+      rotation="-73 68 -69"></a-entity>
     </a-marker>
 
 
