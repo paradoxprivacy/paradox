@@ -42,24 +42,33 @@
         </a-animation>
       </a-image>
 
-      <a-image rotation="-90 0 0" position="0 0.25 0"  src="personImages/mainPoster.png" width="2" height="2"></a-image>
-      <a-image rotation="-90 0 0" position="-2.0 0.5 1"  src="personImages/juanv1.png" width="0.8" height="0.8"></a-image>
-      <a-image rotation="-90 0 0" position="-1.2 0.5 1"  src="personImages/kaoriv1.png" width="0.8" height="0.8"></a-image>
-      <a-image rotation="-90 0 0" position="-0.4  0.5 1"  src="personImages/kylev1.png" width="0.8" height="0.8"></a-image>
-      <a-image rotation="-90 0 0" position="0.4  0.5 1"  src="personImages/lenav1.png" width="0.8" height="0.8"></a-image>
-      <a-image rotation="-90 0 0" position="1.2  0.5 1"  src="personImages/oscarv1.png" width="0.8" height="0.8"></a-image>  
-      <a-image rotation="-90 0 0" position="2.0  0.5 1"  src="personImages/gaylev1.png" width="0.8" height="0.8"></a-image>  
-
-      <a-image material="alphaTest: 0.5" rotation="-90 0 0" position="0 1 2"  src="personImages/prdxTextGrey.png" width="4.5" height="4.5">
-        <a-animation attribute="position"
-          dur="1000"
-          from="0 -3 2"
-          to= "0 1 2"
+      <a-image rotation="-90 0 0" position="0 0.25 0"  src="img/PRDXlogo.png" width="2" height="2">
+      <a-animation attribute="position"
+          dur="2000"
+          from="0 1.25 0.05"
+          to= "0 1.25 0.05"
           direction="alternate"
           repeat="indefinite"
           easing="ease">
         </a-animation>
-      </a-image>      
+      </a-image>
+      <a-image rotation="-90 0 0" position="-2.0 0.5 1.8"  src="personImages/juanv1.png" width="0.8" height="0.8"></a-image>
+      <a-image rotation="-90 0 0" position="-1.2 0.5 1.8"  src="personImages/kaoriv1.png" width="0.8" height="0.8"></a-image>
+      <a-image rotation="-90 0 0" position="-0.4  0.5 1.8"  src="personImages/kylev1.png" width="0.8" height="0.8"></a-image>
+      <a-image rotation="-90 0 0" position="0.4  0.5 1.8"  src="personImages/lenav1.png" width="0.8" height="0.8"></a-image>
+      <a-image rotation="-90 0 0" position="1.2  0.5 1.8"  src="personImages/oscarv1.png" width="0.8" height="0.8"></a-image>  
+      <a-image rotation="-90 0 0" position="2.0  0.5 1.8"  src="personImages/gaylev1.png" width="0.8" height="0.8"></a-image>  
+
+      <!-- <a-image material="alphaTest: 0.5" rotation="-90 0 0" position="0 1 2"  src="personImages/prdxTextGrey.png" width="4.5" height="4.5">
+        <a-animation attribute="position"
+          dur="1000"
+          from="0 -3 4"
+          to= "0 1 4"
+          direction="alternate"
+          repeat="indefinite"
+          easing="ease">
+        </a-animation>
+      </a-image>       -->
 
       <a-entity rotation="-90 0 0" position="0 0 2" geometry="primitive:plane;width:5;height:4;" material="shader:gif;src:url(img/static.gif);" gif="">
       <a-animation attribute="position"
@@ -261,7 +270,7 @@
     <!-- <a-asset-item id="Scamera" src="Scamera/scene.gltf"></a-asset-item> -->
     <a-asset-item id="Scamera" src="accessCamera/scene.gltf"></a-asset-item>
     <a-entity gltf-model="#Scamera" animation-mixer="loop:repeat" 
-      scale="70 70 70" 
+      scale="40 40 40" 
       position="0 0 1 " 
       rotation="-73 68 -69"></a-entity>
     </a-marker>
