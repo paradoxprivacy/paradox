@@ -235,6 +235,8 @@
     </script>
  -->
     <a-marker preset="custom" type="pattern" url="patt/Scamera.patt" video-danceass>
+    <a-plane scale = "1.1 1.1" position='0 0.1 0' rotation="-90 0 0" material='color: black' controls></a-plane>
+
       <!-- <a-plane scale = "4 2" position='0 0.1 0' rotation="-90 0 0" material='transparent:true;src:#mp4' controls></a-plane>
       <video preload="none" id="mp4" response-type="arraybuffer" loop="true" crossorigin webkit-playsinline playsinline controls>
         <source  src="videos/whyshouldpeople.mp4">
@@ -271,7 +273,7 @@
     <a-asset-item id="Scamera" src="accessCamera/scene.gltf"></a-asset-item>
     <a-entity gltf-model="#Scamera" animation-mixer="loop:repeat" 
       scale="40 40 40" 
-      position="0 0 1 " 
+      position="-0.1 0 0.5" 
       rotation="-73 68 -69"></a-entity>
     </a-marker>
 
