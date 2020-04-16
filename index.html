@@ -80,33 +80,9 @@
           easing="ease">
         </a-animation>
       </a-entity>
-
       <!-- <a-entity sound="src: url(SOUND/static.mp3); autoplay: false"></a-entity> -->
     </a-marker>
 
-    <!------------------------------- T MARKER ------------------------------->
-   
-    <!-- <script>
-        AFRAME.registerComponent('video-privacy', {
-          init: function() {
-      console.log('video init entered');
-              this.toggle = false;
-              this.vid = document.querySelector("#mp4");
-              this.vid.pause();
-          },
-          tick: function() {
-              if (this.el.object3D.visible == true) {
-                  if (!this.toggle) {
-                      this.toggle = true;
-                      this.vid.play();
-                  }
-              } else {
-                  this.toggle = false;
-                  this.vid.pause();
-              }
-          }
-      });
-    </script> -->
 
     <a-marker preset="custom" type="pattern" url="patt/newT.patt" video-privacy>
       <a-asset-item id="chevronLeft" src="3DModels/chevron.gltf"></a-asset-item>
@@ -121,47 +97,7 @@
         easing="ease">
       </a-animation>
       </a-entity>
-    </a-marker>
-      
-      <!-- <a-entity>
-      <a-plane scale = "4 2" position='0 0.1 0' rotation="-90 0 0" material='transparent:true;src:#mp4' controls></a-plane>
-        <video preload="none" id="mp4" response-type="arraybuffer" loop="false" crossorigin webkit-playsinline playsinline controls>
-          <source  src="videos/whyshouldpeople.mp4">
-        </video>
-      </a-entity> -->
-      
-
-      <!-- <a-asset-item id="chevronRight" src="3DModels/chevron.gltf"></a-asset-item>
-      <a-entity position="0 0 0" rotation="180 90 0" scale="0.5 0.5 0.5" gltf-model="#chevronRight">
-        <a-animation attribute="position"
-          delay="0000"
-          dur="1000"
-          from="6.4 2 2"
-          to= "0 2 2"
-          direction="alternate"
-          repeat="indefinite"
-          easing="ease">
-        </a-animation>
-      </a-entity> -->
-
-    </a-marker>
-
-    <!-- <a-marker preset="custom" type="pattern" url="patt/newT.patt">
-      <a-asset-item id="chevronRight" src="3DModels/chevron.gltf"></a-asset-item>
-      <a-entity position="0 0 0" rotation="180 90 0" scale="0.5 0.5 0.5" gltf-model="#chevronRight">
-        <a-animation attribute="position"
-        dur="1000"
-        from="-0.4 2 2"
-        to= "6 2 2"
-        direction="alternate"
-        repeat="indefinite"
-        easing="ease">
-      </a-animation>
-      </a-entity>
-    </a-marker> -->
-
-    <!-------------------------------<<< HIRO MARKER >>>------------------------------->
-     
+    </a-marker>   
   
     <!------------------------------<<<  MP4 VIDEO & SCRIPT >>>------------------------------->
     <script>                    
@@ -186,87 +122,15 @@
       });
     </script>
   
-
     <a-marker preset="custom" type="pattern" url="patt/pin.patt" video-vidhandler>
-      
         <a-plane scale = "4 2" position='0 0.1 0' rotation="-90 0 0" material='transparent:true;src:#mp4' controls></a-plane>
         <video preload="none" id="mp4" response-type="arraybuffer" loop="false" crossorigin webkit-playsinline playsinline controls>
           <source  src="videos/wayfinding.mp4">
         </video>
-       
-        <!-- <a-asset-item id="chevronDown" src="3DModels/chevron.gltf"></a-asset-item>
-        <a-entity position="0 0 0" rotation="180 0 0" scale="0.5 0.5 0.5" gltf-model="#chevronDown">
-          <a-animation attribute="position"
-            delay="0000"
-            dur="1000"
-            from="0 2 0"
-            to= "0 2 2"
-            direction="alternate"
-            repeat="indefinite"
-            easing="ease">
-          </a-animation>
-        </a-entity> -->
-
     </a-marker>
 
-    <!-- <script>                    
-      AFRAME.registerComponent('video-danceass', {
-          init: function() {
-      console.log('video init entered');
-              this.toggle = false;
-              this.vid = document.querySelector("#mp4");
-              this.vid.pause();
-          },
-          tick: function() {
-              if (this.el.object3D.visible == true) {
-                  if (!this.toggle) {
-                      this.toggle = true;
-                      this.vid.play();
-                  }
-              } else {
-                  this.toggle = false;
-                  this.vid.pause();
-              }
-          }
-      });
-    </script>
- -->
     <a-marker preset="custom" type="pattern" url="patt/Scamera.patt" video-danceass>
     <a-plane scale = "2 2" position='0 0.1 0' rotation="-90 0 0" material='color: black' controls></a-plane>
-
-      <!-- <a-plane scale = "4 2" position='0 0.1 0' rotation="-90 0 0" material='transparent:true;src:#mp4' controls></a-plane>
-      <video preload="none" id="mp4" response-type="arraybuffer" loop="true" crossorigin webkit-playsinline playsinline controls>
-        <source  src="videos/whyshouldpeople.mp4">
-      </video> -->
-
-      <!-- <a-asset-item id="chevronRight" src="3DModels/chevron.gltf"></a-asset-item>
-      <a-entity position="0 0 0" rotation="180 90 0" scale="0.5 0.5 0.5" gltf-model="#chevronRight">
-        <a-animation attribute="position"
-          delay="0000"
-          dur="1000"
-          from="6.4 2 2"
-          to= "0 2 2"
-          direction="alternate"
-          repeat="indefinite"
-          easing="ease">
-        </a-animation>
-      </a-entity> -->
-
-      <!-- <a-asset-item id="Scamera" src="Scamera/scene.gltf"></a-asset-item>
-      <a-entity position="0 0 0" rotation="180 90 0" scale="0.5 0.5 0.5" gltf-model="#Scamera">
-        <a-animation attribute="position"
-          delay="0000"
-          dur="1000"
-          from="6.4 2 2"
-          to= "0 2 2"
-          direction="alternate"
-          repeat="indefinite"
-          easing="ease">
-        </a-animation>
-      </a-entity> -->
-
-    <!-- <a-marker preset="custom" type="pattern" url="patt/hiro.patt"> -->
-    <!-- <a-asset-item id="Scamera" src="Scamera/scene.gltf"></a-asset-item> -->
     <a-asset-item id="Scamera" src="accessCamera/scene.gltf"></a-asset-item>
     <a-entity gltf-model="#Scamera" animation-mixer="loop:repeat" 
       scale="30 30 30" 
@@ -274,8 +138,24 @@
       rotation="-73 68 -69"></a-entity>
     </a-marker>
 
+    </a-scene>
+  </body>
+</html>
 
-    </a-marker>
+    <!------------------------------- MP3 SOUND ------------------------------->
+
+    <!-- <a-entity sound="src: url(SOUND/static.mp3); autoplay: true"></a-entity> -->
+
+    <!------------------------------- TEXT ------------------------------->
+
+    <!-- <a-entity text="value:PRDX PRIVACY; color: white; width: 14;" 
+    scale="1 1 1" 
+    rotation="-90 0 0" 
+    position="4.5 1 3"  
+    color="lightblue"
+    negate="false"></a-entity> -->
+
+    <!-- <a-text value="ABC" font="RhodeMediumExtended-msdf.json" font-image="RhodeMediumExtended-msdf.png" negate="false" scale="2 2 1" position="2 2 2"></a-text> -->
 
     <!----------------------------- FBX MODEL ----------------------------------->
     <!-- <a-marker preset="custom" type="pattern" url="patt/B.patt">
@@ -284,6 +164,27 @@
       scale="0.5 0.5 0.5" 
       position="0 0 0" 
       rotation="0ß -100 114"></a-entity>
+    </a-marker> -->
+
+
+
+    <!-------------------------- STILL GLTF -------------------------------->
+
+    <!-- <a-marker preset="custom" type="pattern" url="patt/hiro.patt">
+      <a-asset-item id="Scamera" src="3DModels/security_camera/Scamera.gltf"></a-asset-item>
+      <a-entity gltf-model="#Scamera"  
+      scale="0.01 0.01 0.01"
+      position="-0.1 0.3 0.4" 
+      rotation="-90 0 0">
+      </a-entity>
+    </a-marker> -->
+
+    <!-- <a-marker preset="custom" type="pattern" url="patt/hiro.patt">
+      <a-asset-item id="dancer" src="dancing_stormtrooper/scene.gltf"></a-asset-item>
+      <a-entity gltf-model="#dancer" animation-mixer="loop:repeat" 
+      scale="1 1 1" 
+      position="0 3 0" 
+      rotation="-90 0 0"></a-entity>
     </a-marker> -->
 
     <!-------------------------- ANIMATED GLTF -------------------------------->
@@ -324,40 +225,130 @@
     <!-- light="type: hemisphere; color: #EEE; groundColor: #EEE; intensity: 2" -->
 
 
-    <!-------------------------- STILL GLTF -------------------------------->
 
-    <!-- <a-marker preset="custom" type="pattern" url="patt/hiro.patt">
-      <a-asset-item id="Scamera" src="3DModels/security_camera/Scamera.gltf"></a-asset-item>
-      <a-entity gltf-model="#Scamera"  
-      scale="0.01 0.01 0.01"
-      position="-0.1 0.3 0.4" 
-      rotation="-90 0 0">
+          <!-- <a-plane scale = "4 2" position='0 0.1 0' rotation="-90 0 0" material='transparent:true;src:#mp4' controls></a-plane>
+      <video preload="none" id="mp4" response-type="arraybuffer" loop="true" crossorigin webkit-playsinline playsinline controls>
+        <source  src="videos/whyshouldpeople.mp4">
+      </video> -->
+
+      <!-- <a-asset-item id="chevronRight" src="3DModels/chevron.gltf"></a-asset-item>
+      <a-entity position="0 0 0" rotation="180 90 0" scale="0.5 0.5 0.5" gltf-model="#chevronRight">
+        <a-animation attribute="position"
+          delay="0000"
+          dur="1000"
+          from="6.4 2 2"
+          to= "0 2 2"
+          direction="alternate"
+          repeat="indefinite"
+          easing="ease">
+        </a-animation>
+      </a-entity> -->
+
+      <!-- <a-asset-item id="Scamera" src="Scamera/scene.gltf"></a-asset-item>
+      <a-entity position="0 0 0" rotation="180 90 0" scale="0.5 0.5 0.5" gltf-model="#Scamera">
+        <a-animation attribute="position"
+          delay="0000"
+          dur="1000"
+          from="6.4 2 2"
+          to= "0 2 2"
+          direction="alternate"
+          repeat="indefinite"
+          easing="ease">
+        </a-animation>
+      </a-entity> -->
+
+              <!-- <a-asset-item id="chevronDown" src="3DModels/chevron.gltf"></a-asset-item>
+        <a-entity position="0 0 0" rotation="180 0 0" scale="0.5 0.5 0.5" gltf-model="#chevronDown">
+          <a-animation attribute="position"
+            delay="0000"
+            dur="1000"
+            from="0 2 0"
+            to= "0 2 2"
+            direction="alternate"
+            repeat="indefinite"
+            easing="ease">
+          </a-animation>
+        </a-entity> -->
+
+            <!-- <script>                    
+      AFRAME.registerComponent('video-danceass', {
+          init: function() {
+      console.log('video init entered');
+              this.toggle = false;
+              this.vid = document.querySelector("#mp4");
+              this.vid.pause();
+          },
+          tick: function() {
+              if (this.el.object3D.visible == true) {
+                  if (!this.toggle) {
+                      this.toggle = true;
+                      this.vid.play();
+                  }
+              } else {
+                  this.toggle = false;
+                  this.vid.pause();
+              }
+          }
+      });
+    </script>
+ -->
+
+
+       <!-- <a-entity>
+      <a-plane scale = "4 2" position='0 0.1 0' rotation="-90 0 0" material='transparent:true;src:#mp4' controls></a-plane>
+        <video preload="none" id="mp4" response-type="arraybuffer" loop="false" crossorigin webkit-playsinline playsinline controls>
+          <source  src="videos/whyshouldpeople.mp4">
+        </video>
+      </a-entity> -->
+      
+
+      <!-- <a-asset-item id="chevronRight" src="3DModels/chevron.gltf"></a-asset-item>
+      <a-entity position="0 0 0" rotation="180 90 0" scale="0.5 0.5 0.5" gltf-model="#chevronRight">
+        <a-animation attribute="position"
+          delay="0000"
+          dur="1000"
+          from="6.4 2 2"
+          to= "0 2 2"
+          direction="alternate"
+          repeat="indefinite"
+          easing="ease">
+        </a-animation>
+      </a-entity> -->
+
+    <!-- <a-marker preset="custom" type="pattern" url="patt/newT.patt">
+      <a-asset-item id="chevronRight" src="3DModels/chevron.gltf"></a-asset-item>
+      <a-entity position="0 0 0" rotation="180 90 0" scale="0.5 0.5 0.5" gltf-model="#chevronRight">
+        <a-animation attribute="position"
+        dur="1000"
+        from="-0.4 2 2"
+        to= "6 2 2"
+        direction="alternate"
+        repeat="indefinite"
+        easing="ease">
+      </a-animation>
       </a-entity>
     </a-marker> -->
 
-    <!-- <a-marker preset="custom" type="pattern" url="patt/hiro.patt">
-      <a-asset-item id="dancer" src="dancing_stormtrooper/scene.gltf"></a-asset-item>
-      <a-entity gltf-model="#dancer" animation-mixer="loop:repeat" 
-      scale="1 1 1" 
-      position="0 3 0" 
-      rotation="-90 0 0"></a-entity>
-    </a-marker> -->
-
-    <!------------------------------- MP3 SOUND ------------------------------->
-
-    <!-- <a-entity sound="src: url(SOUND/static.mp3); autoplay: true"></a-entity> -->
-
-    <!------------------------------- TEXT ------------------------------->
-
-    <!-- <a-entity text="value:PRDX PRIVACY; color: white; width: 14;" 
-    scale="1 1 1" 
-    rotation="-90 0 0" 
-    position="4.5 1 3"  
-    color="lightblue"
-    negate="false"></a-entity> -->
-
-    <!-- <a-text value="ABC" font="RhodeMediumExtended-msdf.json" font-image="RhodeMediumExtended-msdf.png" negate="false" scale="2 2 1" position="2 2 2"></a-text> -->
-
-    </a-scene>
-  </body>
-</html>
+        <!------------------------------- T MARKER ------------------------------->
+   
+    <!-- <script>
+        AFRAME.registerComponent('video-privacy', {
+          init: function() {
+      console.log('video init entered');
+              this.toggle = false;
+              this.vid = document.querySelector("#mp4");
+              this.vid.pause();
+          },
+          tick: function() {
+              if (this.el.object3D.visible == true) {
+                  if (!this.toggle) {
+                      this.toggle = true;
+                      this.vid.play();
+                  }
+              } else {
+                  this.toggle = false;
+                  this.vid.pause();
+              }
+          }
+      });
+    </script> -->
